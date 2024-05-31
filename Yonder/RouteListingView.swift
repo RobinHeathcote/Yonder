@@ -28,8 +28,15 @@ struct RouteListingView: View {
         }
     }
     
-    init(sort: SortDescriptor<Route>) {
-        _routes = Query(sort: [sort])
+    init(sort: SortDescriptor<Route>, searchString: String) {
+        _routes = Query(filter: #Predicate {
+            if searchString.isEmpty {
+                return true
+            } else {
+                return $0.name.localizedStandardContains(searchString)
+            }
+        },
+        sort: [sort])
     }
     
     func deleteRoutes(_ indexSet: IndexSet) {
@@ -42,5 +49,5 @@ struct RouteListingView: View {
 }
 
 #Preview {
-    RouteListingView(sort: SortDescriptor(\Route.name))
+    RouteListingView(sort: SortDescriptor(\Route.name), searchString: "")
 }

@@ -12,12 +12,14 @@ struct ContentView: View {
     @Environment(\.modelContext) var modelContext
     @State private var path = [Route]()
     @State private var sortOrder = SortDescriptor(\Route.name)
+    @State private var searchText = ""
     
     var body: some View {
         NavigationStack(path: $path) {
-            RouteListingView(sort: sortOrder)
+            RouteListingView(sort: sortOrder, searchString: searchText)
             .navigationTitle("Yonder")
             .navigationDestination(for: Route.self, destination: EditRouteView.init)
+            .searchable(text: $searchText)
             .toolbar {
                 Button("Add Route", systemImage: "plus", action: addRoute)
                 
