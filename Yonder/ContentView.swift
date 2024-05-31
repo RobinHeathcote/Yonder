@@ -11,9 +11,10 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.modelContext) var modelContext
     @Query var routes: [Route]
+    @State private var path = [Route]()
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             List {
                 ForEach(routes) { route in
                     NavigationLink(value: route) {
@@ -30,17 +31,15 @@ struct ContentView: View {
             .navigationTitle("Yonder")
             .navigationDestination(for: Route.self, destination: EditRouteView.init)
             .toolbar {
-                Button("Add Routes", action: addRoutes)
+                Button("Add Route", systemImage: "plus", action: addRoute)
             }
         }
     }
     
-    func addRoutes() {
-        let hopeValleyRound = Route(name: "Hope Valley Round", type: "Run")
-        let edaleSkyline = Route(name: "Edale Skyline", type: "Run")
-        
-        modelContext.insert(hopeValleyRound)
-        modelContext.insert(edaleSkyline)
+    func addRoute() {
+        let route = Route()
+        modelContext.insert(route)
+        path = [route]
     }
     
     func deleteRoutes(_ indexSet: IndexSet) {

@@ -15,8 +15,8 @@ struct EditRouteView: View {
             TextField("Route", text: $route.name)
             Section("Type") {
                 Picker("Type", selection: $route.type) {
-                    Text("Run").tag(1)
-                    Text("Hike").tag(2)
+                    Text("Run").tag("Run")
+                    Text("Hike").tag("Hike")
                 }
             }
             TextField("Details", text: $route.details)
