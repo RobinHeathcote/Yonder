@@ -10,31 +10,31 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.modelContext) var modelContext
-    @Query var routes: [Route]
     @State private var path = [Route]()
+    @State private var sortOrder = SortDescriptor(\Route.name)
     
     var body: some View {
         NavigationStack(path: $path) {
-            List {
-                ForEach(routes) { route in
-                    NavigationLink(value: route) {
-                        VStack(alignment: .leading) {
-                            Text(route.name)
-                                .font(.headline)
-                            
-                            Text(route.type)
-                        }
-                    }
-                }
-                .onDelete(perform: deleteRoutes)
-            }
+            RouteListingView(sort: sortOrder)
             .navigationTitle("Yonder")
             .navigationDestination(for: Route.self, destination: EditRouteView.init)
             .toolbar {
                 Button("Add Route", systemImage: "plus", action: addRoute)
+                
+                Menu("Sort", systemImage: "arrow.up.arrow.down") {
+                    Picker("Sort", selection: $sortOrder) {
+                        Text("Name")
+                            .tag(SortDescriptor(\Route.name))
+                        Text("Type")
+                            .tag(SortDescriptor(\Route.type))
+                    }
+                    .pickerStyle(.inline)
+                }
             }
         }
     }
+    
+
     
     func addRoute() {
         let route = Route()
@@ -42,13 +42,7 @@ struct ContentView: View {
         path = [route]
     }
     
-    func deleteRoutes(_ indexSet: IndexSet) {
-        for index in indexSet {
-            let route = routes[index]
-            
-            modelContext.delete(route)
-        }
-    }
+
 }
 
 #Preview {
