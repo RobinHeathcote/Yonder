@@ -16,15 +16,19 @@ struct ContentView: View {
         NavigationStack {
             List {
                 ForEach(routes) { route in
-                    VStack(alignment: .leading) {
-                        Text(route.name)
-                            .font(.headline)
-                        
-                        Text(route.type)
+                    NavigationLink(value: route) {
+                        VStack(alignment: .leading) {
+                            Text(route.name)
+                                .font(.headline)
+                            
+                            Text(route.type)
+                        }
                     }
                 }
+                .onDelete(perform: deleteRoutes)
             }
             .navigationTitle("Yonder")
+            .navigationDestination(for: Route.self, destination: EditRouteView.init)
             .toolbar {
                 Button("Add Routes", action: addRoutes)
             }
@@ -37,6 +41,14 @@ struct ContentView: View {
         
         modelContext.insert(hopeValleyRound)
         modelContext.insert(edaleSkyline)
+    }
+    
+    func deleteRoutes(_ indexSet: IndexSet) {
+        for index in indexSet {
+            let route = routes[index]
+            
+            modelContext.delete(route)
+        }
     }
 }
 
