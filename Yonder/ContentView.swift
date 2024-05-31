@@ -36,15 +36,11 @@ struct ContentView: View {
         }
     }
     
-
-    
     func addRoute() {
         let route = Route()
         modelContext.insert(route)
         path = [route]
     }
-    
-
 }
 
 #Preview {

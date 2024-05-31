@@ -1,0 +1,15 @@
+{
+  "originHash" : "abf9a53d6a0dd982afc1ad0493481708bbfde2ef3f24c97957992e48fbdd64f3",
+  "pins" : [
+    {
+      "identity" : "coregpx?tab=readme-ov-file",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vincentneo/CoreGPX?tab=readme-ov-file",
+      "state" : {
+        "revision" : "90dea5dea799e2b3684f5c72f07141d8516ce80b",
+        "version" : "0.9.2"
+      }
+    }
+  ],
+  "version" : 3
+}

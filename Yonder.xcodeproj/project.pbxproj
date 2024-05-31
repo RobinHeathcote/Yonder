@@ -25,6 +25,7 @@
 		CA6AD8392C09DE9F007E08E4 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD8382C09DE9F007E08E4 /* Route.swift */; };
 		CA6AD83B2C09E4FD007E08E4 /* EditRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD83A2C09E4FD007E08E4 /* EditRouteView.swift */; };
 		CA6AD83D2C0A074E007E08E4 /* RouteListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD83C2C0A074E007E08E4 /* RouteListingView.swift */; };
+		CA6AD8402C0A1DDA007E08E4 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = CA6AD83F2C0A1DDA007E08E4 /* CoreGPX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA6AD8402C0A1DDA007E08E4 /* CoreGPX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +272,9 @@
 				CA6AD8022C09C5E2007E08E4 /* PBXTargetDependency */,
 			);
 			name = Yonder;
+			packageProductDependencies = (
+				CA6AD83F2C0A1DDA007E08E4 /* CoreGPX */,
+			);
 			productName = Yonder;
 			productReference = CA6AD7D92C09C5E1007E08E4 /* Yonder.app */;
 			productType = "com.apple.product-type.application";
@@ -406,6 +411,11 @@
 				Base,
 			);
 			mainGroup = CA6AD7D02C09C5E1007E08E4;
+			packageReferences = (
+				CA6AD83E2C0A1DDA007E08E4 /* XCRemoteSwiftPackageReference "CoreGPX" */,
+				CA6AD8412C0A252F007E08E4 /* XCRemoteSwiftPackageReference "SwiftGpx" */,
+				CA6AD8422C0A2F16007E08E4 /* XCRemoteSwiftPackageReference "CoreGPX" */,
+			);
 			productRefGroup = CA6AD7DA2C09C5E1007E08E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1021,6 +1031,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA6AD83E2C0A1DDA007E08E4 /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vincentneo/CoreGPX?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+		CA6AD8412C0A252F007E08E4 /* XCRemoteSwiftPackageReference "SwiftGpx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/anconaesselmann/SwiftGpx";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		CA6AD8422C0A2F16007E08E4 /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vincentneo/CoreGPX";
+			requirement = {
+				kind = exactVersion;
+				version = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA6AD83F2C0A1DDA007E08E4 /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA6AD83E2C0A1DDA007E08E4 /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA6AD7D12C09C5E1007E08E4 /* Project object */;
 }

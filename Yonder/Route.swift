@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftData
+import CoreGPX
 
 @Model
 class Route {
@@ -14,11 +15,13 @@ class Route {
     var details: String
     var type: String
     var routeData: [String]
+    var pathData: [GPXRoute]
     
-    init(name: String = "", details: String = "", type: String = "", routeData: [String] = []) {
+    init(name: String = "", details: String = "", type: String = "", routeData: [String] = [], pathData: [GPXRoute] = []) {
         self.name = name
         self.details = details
         self.type = type
         self.routeData = routeData
+        self.pathData = pathData
     }
 }
