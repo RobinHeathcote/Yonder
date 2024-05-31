@@ -1,0 +1,1014 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA6AD7DD2C09C5E1007E08E4 /* YonderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */; };
+		CA6AD7DF2C09C5E1007E08E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */; };
+		CA6AD7E12C09C5E2007E08E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6AD7E02C09C5E2007E08E4 /* Assets.xcassets */; };
+		CA6AD7E42C09C5E2007E08E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6AD7E32C09C5E2007E08E4 /* Preview Assets.xcassets */; };
+		CA6AD7EE2C09C5E2007E08E4 /* YonderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7ED2C09C5E2007E08E4 /* YonderTests.swift */; };
+		CA6AD7F82C09C5E2007E08E4 /* YonderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7F72C09C5E2007E08E4 /* YonderUITests.swift */; };
+		CA6AD7FA2C09C5E2007E08E4 /* YonderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7F92C09C5E2007E08E4 /* YonderUITestsLaunchTests.swift */; };
+		CA6AD8002C09C5E2007E08E4 /* Yonder Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CA6AD7FF2C09C5E2007E08E4 /* Yonder Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CA6AD8052C09C5E2007E08E4 /* YonderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD8042C09C5E2007E08E4 /* YonderApp.swift */; };
+		CA6AD8072C09C5E2007E08E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD8062C09C5E2007E08E4 /* ContentView.swift */; };
+		CA6AD8092C09C5E3007E08E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6AD8082C09C5E3007E08E4 /* Assets.xcassets */; };
+		CA6AD80C2C09C5E3007E08E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6AD80B2C09C5E3007E08E4 /* Preview Assets.xcassets */; };
+		CA6AD8162C09C5E3007E08E4 /* Yonder_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD8152C09C5E3007E08E4 /* Yonder_Watch_AppTests.swift */; };
+		CA6AD8202C09C5E3007E08E4 /* Yonder_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD81F2C09C5E3007E08E4 /* Yonder_Watch_AppUITests.swift */; };
+		CA6AD8222C09C5E3007E08E4 /* Yonder_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD8212C09C5E3007E08E4 /* Yonder_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA6AD7EA2C09C5E2007E08E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6AD7D12C09C5E1007E08E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6AD7D82C09C5E1007E08E4;
+			remoteInfo = Yonder;
+		};
+		CA6AD7F42C09C5E2007E08E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6AD7D12C09C5E1007E08E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6AD7D82C09C5E1007E08E4;
+			remoteInfo = Yonder;
+		};
+		CA6AD8012C09C5E2007E08E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6AD7D12C09C5E1007E08E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6AD7FE2C09C5E2007E08E4;
+			remoteInfo = "Yonder Watch App";
+		};
+		CA6AD8122C09C5E3007E08E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6AD7D12C09C5E1007E08E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6AD7FE2C09C5E2007E08E4;
+			remoteInfo = "Yonder Watch App";
+		};
+		CA6AD81C2C09C5E3007E08E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6AD7D12C09C5E1007E08E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6AD7FE2C09C5E2007E08E4;
+			remoteInfo = "Yonder Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA6AD8282C09C5E3007E08E4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CA6AD8002C09C5E2007E08E4 /* Yonder Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA6AD7D92C09C5E1007E08E4 /* Yonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonderApp.swift; sourceTree = "<group>"; };
+		CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA6AD7E02C09C5E2007E08E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA6AD7E32C09C5E2007E08E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA6AD7E92C09C5E2007E08E4 /* YonderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YonderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6AD7ED2C09C5E2007E08E4 /* YonderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonderTests.swift; sourceTree = "<group>"; };
+		CA6AD7F32C09C5E2007E08E4 /* YonderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YonderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6AD7F72C09C5E2007E08E4 /* YonderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonderUITests.swift; sourceTree = "<group>"; };
+		CA6AD7F92C09C5E2007E08E4 /* YonderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA6AD7FF2C09C5E2007E08E4 /* Yonder Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yonder Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6AD8042C09C5E2007E08E4 /* YonderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonderApp.swift; sourceTree = "<group>"; };
+		CA6AD8062C09C5E2007E08E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA6AD8082C09C5E3007E08E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA6AD80B2C09C5E3007E08E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA6AD8112C09C5E3007E08E4 /* Yonder Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yonder Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6AD8152C09C5E3007E08E4 /* Yonder_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yonder_Watch_AppTests.swift; sourceTree = "<group>"; };
+		CA6AD81B2C09C5E3007E08E4 /* Yonder Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yonder Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6AD81F2C09C5E3007E08E4 /* Yonder_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yonder_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		CA6AD8212C09C5E3007E08E4 /* Yonder_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yonder_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA6AD7D62C09C5E1007E08E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD7E62C09C5E2007E08E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD7F02C09C5E2007E08E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD7FC2C09C5E2007E08E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD80E2C09C5E3007E08E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD8182C09C5E3007E08E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA6AD7D02C09C5E1007E08E4 = {
+			isa = PBXGroup;
+			children = (
+				CA6AD7DB2C09C5E1007E08E4 /* Yonder */,
+				CA6AD7EC2C09C5E2007E08E4 /* YonderTests */,
+				CA6AD7F62C09C5E2007E08E4 /* YonderUITests */,
+				CA6AD8032C09C5E2007E08E4 /* Yonder Watch App */,
+				CA6AD8142C09C5E3007E08E4 /* Yonder Watch AppTests */,
+				CA6AD81E2C09C5E3007E08E4 /* Yonder Watch AppUITests */,
+				CA6AD7DA2C09C5E1007E08E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA6AD7DA2C09C5E1007E08E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA6AD7D92C09C5E1007E08E4 /* Yonder.app */,
+				CA6AD7E92C09C5E2007E08E4 /* YonderTests.xctest */,
+				CA6AD7F32C09C5E2007E08E4 /* YonderUITests.xctest */,
+				CA6AD7FF2C09C5E2007E08E4 /* Yonder Watch App.app */,
+				CA6AD8112C09C5E3007E08E4 /* Yonder Watch AppTests.xctest */,
+				CA6AD81B2C09C5E3007E08E4 /* Yonder Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA6AD7DB2C09C5E1007E08E4 /* Yonder */ = {
+			isa = PBXGroup;
+			children = (
+				CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */,
+				CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */,
+				CA6AD7E02C09C5E2007E08E4 /* Assets.xcassets */,
+				CA6AD7E22C09C5E2007E08E4 /* Preview Content */,
+			);
+			path = Yonder;
+			sourceTree = "<group>";
+		};
+		CA6AD7E22C09C5E2007E08E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA6AD7E32C09C5E2007E08E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA6AD7EC2C09C5E2007E08E4 /* YonderTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA6AD7ED2C09C5E2007E08E4 /* YonderTests.swift */,
+			);
+			path = YonderTests;
+			sourceTree = "<group>";
+		};
+		CA6AD7F62C09C5E2007E08E4 /* YonderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA6AD7F72C09C5E2007E08E4 /* YonderUITests.swift */,
+				CA6AD7F92C09C5E2007E08E4 /* YonderUITestsLaunchTests.swift */,
+			);
+			path = YonderUITests;
+			sourceTree = "<group>";
+		};
+		CA6AD8032C09C5E2007E08E4 /* Yonder Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				CA6AD8042C09C5E2007E08E4 /* YonderApp.swift */,
+				CA6AD8062C09C5E2007E08E4 /* ContentView.swift */,
+				CA6AD8082C09C5E3007E08E4 /* Assets.xcassets */,
+				CA6AD80A2C09C5E3007E08E4 /* Preview Content */,
+			);
+			path = "Yonder Watch App";
+			sourceTree = "<group>";
+		};
+		CA6AD80A2C09C5E3007E08E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA6AD80B2C09C5E3007E08E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA6AD8142C09C5E3007E08E4 /* Yonder Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA6AD8152C09C5E3007E08E4 /* Yonder_Watch_AppTests.swift */,
+			);
+			path = "Yonder Watch AppTests";
+			sourceTree = "<group>";
+		};
+		CA6AD81E2C09C5E3007E08E4 /* Yonder Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA6AD81F2C09C5E3007E08E4 /* Yonder_Watch_AppUITests.swift */,
+				CA6AD8212C09C5E3007E08E4 /* Yonder_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Yonder Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA6AD7D82C09C5E1007E08E4 /* Yonder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6AD8292C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "Yonder" */;
+			buildPhases = (
+				CA6AD7D52C09C5E1007E08E4 /* Sources */,
+				CA6AD7D62C09C5E1007E08E4 /* Frameworks */,
+				CA6AD7D72C09C5E1007E08E4 /* Resources */,
+				CA6AD8282C09C5E3007E08E4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA6AD8022C09C5E2007E08E4 /* PBXTargetDependency */,
+			);
+			name = Yonder;
+			productName = Yonder;
+			productReference = CA6AD7D92C09C5E1007E08E4 /* Yonder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA6AD7E82C09C5E2007E08E4 /* YonderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6AD82C2C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "YonderTests" */;
+			buildPhases = (
+				CA6AD7E52C09C5E2007E08E4 /* Sources */,
+				CA6AD7E62C09C5E2007E08E4 /* Frameworks */,
+				CA6AD7E72C09C5E2007E08E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA6AD7EB2C09C5E2007E08E4 /* PBXTargetDependency */,
+			);
+			name = YonderTests;
+			productName = YonderTests;
+			productReference = CA6AD7E92C09C5E2007E08E4 /* YonderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA6AD7F22C09C5E2007E08E4 /* YonderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6AD82F2C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "YonderUITests" */;
+			buildPhases = (
+				CA6AD7EF2C09C5E2007E08E4 /* Sources */,
+				CA6AD7F02C09C5E2007E08E4 /* Frameworks */,
+				CA6AD7F12C09C5E2007E08E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA6AD7F52C09C5E2007E08E4 /* PBXTargetDependency */,
+			);
+			name = YonderUITests;
+			productName = YonderUITests;
+			productReference = CA6AD7F32C09C5E2007E08E4 /* YonderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CA6AD7FE2C09C5E2007E08E4 /* Yonder Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6AD8252C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "Yonder Watch App" */;
+			buildPhases = (
+				CA6AD7FB2C09C5E2007E08E4 /* Sources */,
+				CA6AD7FC2C09C5E2007E08E4 /* Frameworks */,
+				CA6AD7FD2C09C5E2007E08E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yonder Watch App";
+			productName = "Yonder Watch App";
+			productReference = CA6AD7FF2C09C5E2007E08E4 /* Yonder Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA6AD8102C09C5E3007E08E4 /* Yonder Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6AD8322C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "Yonder Watch AppTests" */;
+			buildPhases = (
+				CA6AD80D2C09C5E3007E08E4 /* Sources */,
+				CA6AD80E2C09C5E3007E08E4 /* Frameworks */,
+				CA6AD80F2C09C5E3007E08E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA6AD8132C09C5E3007E08E4 /* PBXTargetDependency */,
+			);
+			name = "Yonder Watch AppTests";
+			productName = "Yonder Watch AppTests";
+			productReference = CA6AD8112C09C5E3007E08E4 /* Yonder Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA6AD81A2C09C5E3007E08E4 /* Yonder Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6AD8352C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "Yonder Watch AppUITests" */;
+			buildPhases = (
+				CA6AD8172C09C5E3007E08E4 /* Sources */,
+				CA6AD8182C09C5E3007E08E4 /* Frameworks */,
+				CA6AD8192C09C5E3007E08E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA6AD81D2C09C5E3007E08E4 /* PBXTargetDependency */,
+			);
+			name = "Yonder Watch AppUITests";
+			productName = "Yonder Watch AppUITests";
+			productReference = CA6AD81B2C09C5E3007E08E4 /* Yonder Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA6AD7D12C09C5E1007E08E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CA6AD7D82C09C5E1007E08E4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CA6AD7E82C09C5E2007E08E4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CA6AD7D82C09C5E1007E08E4;
+					};
+					CA6AD7F22C09C5E2007E08E4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CA6AD7D82C09C5E1007E08E4;
+					};
+					CA6AD7FE2C09C5E2007E08E4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CA6AD8102C09C5E3007E08E4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CA6AD7FE2C09C5E2007E08E4;
+					};
+					CA6AD81A2C09C5E3007E08E4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CA6AD7FE2C09C5E2007E08E4;
+					};
+				};
+			};
+			buildConfigurationList = CA6AD7D42C09C5E1007E08E4 /* Build configuration list for PBXProject "Yonder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA6AD7D02C09C5E1007E08E4;
+			productRefGroup = CA6AD7DA2C09C5E1007E08E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA6AD7D82C09C5E1007E08E4 /* Yonder */,
+				CA6AD7E82C09C5E2007E08E4 /* YonderTests */,
+				CA6AD7F22C09C5E2007E08E4 /* YonderUITests */,
+				CA6AD7FE2C09C5E2007E08E4 /* Yonder Watch App */,
+				CA6AD8102C09C5E3007E08E4 /* Yonder Watch AppTests */,
+				CA6AD81A2C09C5E3007E08E4 /* Yonder Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA6AD7D72C09C5E1007E08E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6AD7E42C09C5E2007E08E4 /* Preview Assets.xcassets in Resources */,
+				CA6AD7E12C09C5E2007E08E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD7E72C09C5E2007E08E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD7F12C09C5E2007E08E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD7FD2C09C5E2007E08E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6AD80C2C09C5E3007E08E4 /* Preview Assets.xcassets in Resources */,
+				CA6AD8092C09C5E3007E08E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD80F2C09C5E3007E08E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD8192C09C5E3007E08E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA6AD7D52C09C5E1007E08E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6AD7DF2C09C5E1007E08E4 /* ContentView.swift in Sources */,
+				CA6AD7DD2C09C5E1007E08E4 /* YonderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD7E52C09C5E2007E08E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6AD7EE2C09C5E2007E08E4 /* YonderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD7EF2C09C5E2007E08E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6AD7F82C09C5E2007E08E4 /* YonderUITests.swift in Sources */,
+				CA6AD7FA2C09C5E2007E08E4 /* YonderUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD7FB2C09C5E2007E08E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6AD8072C09C5E2007E08E4 /* ContentView.swift in Sources */,
+				CA6AD8052C09C5E2007E08E4 /* YonderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD80D2C09C5E3007E08E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6AD8162C09C5E3007E08E4 /* Yonder_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6AD8172C09C5E3007E08E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6AD8202C09C5E3007E08E4 /* Yonder_Watch_AppUITests.swift in Sources */,
+				CA6AD8222C09C5E3007E08E4 /* Yonder_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA6AD7EB2C09C5E2007E08E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA6AD7D82C09C5E1007E08E4 /* Yonder */;
+			targetProxy = CA6AD7EA2C09C5E2007E08E4 /* PBXContainerItemProxy */;
+		};
+		CA6AD7F52C09C5E2007E08E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA6AD7D82C09C5E1007E08E4 /* Yonder */;
+			targetProxy = CA6AD7F42C09C5E2007E08E4 /* PBXContainerItemProxy */;
+		};
+		CA6AD8022C09C5E2007E08E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA6AD7FE2C09C5E2007E08E4 /* Yonder Watch App */;
+			targetProxy = CA6AD8012C09C5E2007E08E4 /* PBXContainerItemProxy */;
+		};
+		CA6AD8132C09C5E3007E08E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA6AD7FE2C09C5E2007E08E4 /* Yonder Watch App */;
+			targetProxy = CA6AD8122C09C5E3007E08E4 /* PBXContainerItemProxy */;
+		};
+		CA6AD81D2C09C5E3007E08E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA6AD7FE2C09C5E2007E08E4 /* Yonder Watch App */;
+			targetProxy = CA6AD81C2C09C5E3007E08E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA6AD8232C09C5E3007E08E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA6AD8242C09C5E3007E08E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CA6AD8262C09C5E3007E08E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yonder Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Yonder;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = robinHeathcote.Yonder;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = robinHeathcote.Yonder.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		CA6AD8272C09C5E3007E08E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yonder Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Yonder;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = robinHeathcote.Yonder;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = robinHeathcote.Yonder.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		CA6AD82A2C09C5E3007E08E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yonder/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Yonder;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = robinHeathcote.Yonder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA6AD82B2C09C5E3007E08E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yonder/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Yonder;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = robinHeathcote.Yonder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA6AD82D2C09C5E3007E08E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = robinHeathcote.YonderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yonder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yonder";
+			};
+			name = Debug;
+		};
+		CA6AD82E2C09C5E3007E08E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = robinHeathcote.YonderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yonder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yonder";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA6AD8302C09C5E3007E08E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = robinHeathcote.YonderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yonder;
+			};
+			name = Debug;
+		};
+		CA6AD8312C09C5E3007E08E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = robinHeathcote.YonderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yonder;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA6AD8332C09C5E3007E08E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "robinHeathcote.Yonder-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yonder Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yonder Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		CA6AD8342C09C5E3007E08E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "robinHeathcote.Yonder-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yonder Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yonder Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		CA6AD8362C09C5E3007E08E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "robinHeathcote.Yonder-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Yonder Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		CA6AD8372C09C5E3007E08E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "robinHeathcote.Yonder-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Yonder Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA6AD7D42C09C5E1007E08E4 /* Build configuration list for PBXProject "Yonder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6AD8232C09C5E3007E08E4 /* Debug */,
+				CA6AD8242C09C5E3007E08E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6AD8252C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "Yonder Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6AD8262C09C5E3007E08E4 /* Debug */,
+				CA6AD8272C09C5E3007E08E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6AD8292C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "Yonder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6AD82A2C09C5E3007E08E4 /* Debug */,
+				CA6AD82B2C09C5E3007E08E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6AD82C2C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "YonderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6AD82D2C09C5E3007E08E4 /* Debug */,
+				CA6AD82E2C09C5E3007E08E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6AD82F2C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "YonderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6AD8302C09C5E3007E08E4 /* Debug */,
+				CA6AD8312C09C5E3007E08E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6AD8322C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "Yonder Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6AD8332C09C5E3007E08E4 /* Debug */,
+				CA6AD8342C09C5E3007E08E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6AD8352C09C5E3007E08E4 /* Build configuration list for PBXNativeTarget "Yonder Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6AD8362C09C5E3007E08E4 /* Debug */,
+				CA6AD8372C09C5E3007E08E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA6AD7D12C09C5E1007E08E4 /* Project object */;
+}
