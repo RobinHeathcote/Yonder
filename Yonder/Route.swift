@@ -15,9 +15,9 @@ class Route {
     var details: String
     var type: String
     var routeData: [String]
-    var pathData: [GPXRoute]
+    var pathData: [GPXTrackPoint]
     
-    init(name: String = "", details: String = "", type: String = "", routeData: [String] = [], pathData: [GPXRoute] = []) {
+    init(name: String = "", details: String = "", type: String = "", routeData: [String] = [], pathData: [GPXTrackPoint] = []) {
         self.name = name
         self.details = details
         self.type = type
