@@ -7,6 +7,8 @@
 
 
 import SwiftUI
+import WatchKit
+
 struct SessionPagingView: View {
     @State private var selection: Tab = .metrics
     enum Tab {
@@ -15,9 +17,9 @@ struct SessionPagingView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            Text("Controls").tag(Tab.controls)
-            Text("Metrics").tag(Tab.metrics)
-            Text("Now Playing").tag(Tab.nowPlaying)
+            ControlsView().tag(Tab.controls)
+            MetricsView().tag(Tab.metrics)
+            NowPlayingView().tag(Tab.nowPlaying)
         }
     }
 }
