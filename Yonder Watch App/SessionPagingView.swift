@@ -10,8 +10,10 @@ import SwiftUI
 import WatchKit
 
 struct SessionPagingView: View {
+    @Environment(\.isLuminanceReduced) var isLuminanceReduced
     @EnvironmentObject var workoutManager: WorkoutManager
     @State private var selection: Tab = .metrics
+    
     enum Tab {
         case controls, metrics, nowPlaying
     }
@@ -28,7 +30,13 @@ struct SessionPagingView: View {
         .onChange(of: workoutManager.running) {
                         displayMetricsView()
         }
-    }
+        .tabViewStyle(
+            PageTabViewStyle(indexDisplayMode: isLuminanceReduced ? .never : .automatic)
+        )
+        .onChange(of: isLuminanceReduced) {
+            displayMetricsView()
+            }
+        }
 
     private func displayMetricsView() {
         withAnimation {

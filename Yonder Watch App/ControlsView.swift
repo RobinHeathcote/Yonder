@@ -9,6 +9,7 @@
 import SwiftUI
 struct ControlsView: View {
     @EnvironmentObject var workoutManager: WorkoutManager
+
     var body: some View {
         HStack {
             VStack {
@@ -35,5 +36,5 @@ struct ControlsView: View {
     }
 }
 #Preview {
-    ControlsView()
+    ControlsView().environmentObject(WorkoutManager())
 }

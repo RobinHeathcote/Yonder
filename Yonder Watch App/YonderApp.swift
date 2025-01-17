@@ -15,10 +15,10 @@ struct Yonder_Watch_AppApp: App {
             NavigationView {
                 StartView()
             }
-            .environmentObject(workoutManager)
             .sheet(isPresented: $workoutManager.showingSummaryView) {
                 SummaryView()
             }
+            .environmentObject(workoutManager)
         }
     }
 }
