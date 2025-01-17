@@ -7,7 +7,9 @@
 
 import SwiftUI
 import HealthKit
+
 struct StartView: View {
+    @EnvironmentObject var workoutManager: WorkoutManager
     var workoutTypes: [HKWorkoutActivityType] = [.cycling, .running, .walking]
     var body: some View {
         List(workoutTypes) { workoutType in
@@ -20,13 +22,16 @@ struct StartView: View {
         }
         .listStyle(.carousel)
         .navigationBarTitle("Workouts")
+        .onAppear {
+            workoutManager.requestAuthorization()
+        }
     }
 }
 
 #Preview {
     StartView()
 }
-extension HKWorkoutActivityType: Identifiable {
+extension HKWorkoutActivityType: @retroactive Identifiable {
     public var id: UInt {
         rawValue
     }

@@ -15,6 +15,7 @@
 		CA4D52992D3AC27B00C2AEDE /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D52982D3AC27B00C2AEDE /* ControlsView.swift */; };
 		CA4D529B2D3ADF7C00C2AEDE /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D529A2D3ADF7C00C2AEDE /* SummaryView.swift */; };
 		CA4D529D2D3AE01400C2AEDE /* ActivityRingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D529C2D3AE01400C2AEDE /* ActivityRingsView.swift */; };
+		CA4D529F2D3AE12B00C2AEDE /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D529E2D3AE12B00C2AEDE /* WorkoutManager.swift */; };
 		CA6AD7DD2C09C5E1007E08E4 /* YonderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */; };
 		CA6AD7DF2C09C5E1007E08E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */; };
 		CA6AD7E12C09C5E2007E08E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6AD7E02C09C5E2007E08E4 /* Assets.xcassets */; };
@@ -98,6 +99,11 @@
 		CA4D52982D3AC27B00C2AEDE /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		CA4D529A2D3ADF7C00C2AEDE /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		CA4D529C2D3AE01400C2AEDE /* ActivityRingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingsView.swift; sourceTree = "<group>"; };
+		CA4D529E2D3AE12B00C2AEDE /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		CA4D52A02D3AE3D800C2AEDE /* Yonder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yonder.entitlements; sourceTree = "<group>"; };
+		CA4D52A12D3AE3E100C2AEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CA4D52A22D3AE42C00C2AEDE /* Yonder-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Yonder-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CA4D52A32D3AE43700C2AEDE /* Yonder Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Yonder Watch App.entitlements"; sourceTree = "<group>"; };
 		CA6AD7D92C09C5E1007E08E4 /* Yonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonderApp.swift; sourceTree = "<group>"; };
 		CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -200,6 +206,8 @@
 		CA6AD7DB2C09C5E1007E08E4 /* Yonder */ = {
 			isa = PBXGroup;
 			children = (
+				CA4D52A12D3AE3E100C2AEDE /* Info.plist */,
+				CA4D52A02D3AE3D800C2AEDE /* Yonder.entitlements */,
 				CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */,
 				CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */,
 				CA6AD83C2C0A074E007E08E4 /* RouteListingView.swift */,
@@ -242,6 +250,9 @@
 		CA6AD8032C09C5E2007E08E4 /* Yonder Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				CA4D52A32D3AE43700C2AEDE /* Yonder Watch App.entitlements */,
+				CA4D52A22D3AE42C00C2AEDE /* Yonder-Watch-App-Info.plist */,
+				CA4D529E2D3AE12B00C2AEDE /* WorkoutManager.swift */,
 				CA4D529C2D3AE01400C2AEDE /* ActivityRingsView.swift */,
 				CA4D529A2D3ADF7C00C2AEDE /* SummaryView.swift */,
 				CA4D52982D3AC27B00C2AEDE /* ControlsView.swift */,
@@ -543,6 +554,7 @@
 			files = (
 				CA4D528F2D3AB75F00C2AEDE /* StartView.swift in Sources */,
 				CA4D529B2D3ADF7C00C2AEDE /* SummaryView.swift in Sources */,
+				CA4D529F2D3AE12B00C2AEDE /* WorkoutManager.swift in Sources */,
 				CA4D52952D3ABF8F00C2AEDE /* MetricsView.swift in Sources */,
 				CA4D52972D3AC00E00C2AEDE /* ElapsedTimeView.swift in Sources */,
 				CA6AD8052C09C5E2007E08E4 /* YonderApp.swift in Sources */,
@@ -719,11 +731,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Yonder Watch App/Yonder Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yonder Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yonder-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Yonder;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = robinHeathcote.Yonder;
@@ -748,11 +762,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Yonder Watch App/Yonder Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yonder Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yonder-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Yonder;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = robinHeathcote.Yonder;
@@ -779,12 +795,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Yonder/Yonder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yonder/Preview Content\"";
 				DEVELOPMENT_TEAM = 26Q7R9JY3W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yonder/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Yonder;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -812,12 +830,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Yonder/Yonder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yonder/Preview Content\"";
 				DEVELOPMENT_TEAM = 26Q7R9JY3W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yonder/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Yonder;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
