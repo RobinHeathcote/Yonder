@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CA0BC4442C664E7E0052B8EA /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BC4432C664E7E0052B8EA /* ExampleView.swift */; };
 		CA4D528F2D3AB75F00C2AEDE /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D528E2D3AB75800C2AEDE /* StartView.swift */; };
+		CA4D52932D3ABF2700C2AEDE /* SessionPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D52922D3ABF2700C2AEDE /* SessionPagingView.swift */; };
+		CA4D52952D3ABF8F00C2AEDE /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D52942D3ABF8F00C2AEDE /* MetricsView.swift */; };
 		CA6AD7DD2C09C5E1007E08E4 /* YonderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */; };
 		CA6AD7DF2C09C5E1007E08E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */; };
 		CA6AD7E12C09C5E2007E08E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6AD7E02C09C5E2007E08E4 /* Assets.xcassets */; };
@@ -18,7 +20,6 @@
 		CA6AD7FA2C09C5E2007E08E4 /* YonderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7F92C09C5E2007E08E4 /* YonderUITestsLaunchTests.swift */; };
 		CA6AD8002C09C5E2007E08E4 /* Yonder Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CA6AD7FF2C09C5E2007E08E4 /* Yonder Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CA6AD8052C09C5E2007E08E4 /* YonderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD8042C09C5E2007E08E4 /* YonderApp.swift */; };
-		CA6AD8072C09C5E2007E08E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD8062C09C5E2007E08E4 /* ContentView.swift */; };
 		CA6AD8092C09C5E3007E08E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6AD8082C09C5E3007E08E4 /* Assets.xcassets */; };
 		CA6AD80C2C09C5E3007E08E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6AD80B2C09C5E3007E08E4 /* Preview Assets.xcassets */; };
 		CA6AD8162C09C5E3007E08E4 /* Yonder_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD8152C09C5E3007E08E4 /* Yonder_Watch_AppTests.swift */; };
@@ -87,6 +88,8 @@
 /* Begin PBXFileReference section */
 		CA0BC4432C664E7E0052B8EA /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		CA4D528E2D3AB75800C2AEDE /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		CA4D52922D3ABF2700C2AEDE /* SessionPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPagingView.swift; sourceTree = "<group>"; };
+		CA4D52942D3ABF8F00C2AEDE /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
 		CA6AD7D92C09C5E1007E08E4 /* Yonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonderApp.swift; sourceTree = "<group>"; };
 		CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,7 +102,6 @@
 		CA6AD7F92C09C5E2007E08E4 /* YonderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CA6AD7FF2C09C5E2007E08E4 /* Yonder Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yonder Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6AD8042C09C5E2007E08E4 /* YonderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonderApp.swift; sourceTree = "<group>"; };
-		CA6AD8062C09C5E2007E08E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA6AD8082C09C5E3007E08E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA6AD80B2C09C5E3007E08E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA6AD8112C09C5E3007E08E4 /* Yonder Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yonder Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,9 +234,10 @@
 		CA6AD8032C09C5E2007E08E4 /* Yonder Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				CA4D52942D3ABF8F00C2AEDE /* MetricsView.swift */,
+				CA4D52922D3ABF2700C2AEDE /* SessionPagingView.swift */,
 				CA4D528E2D3AB75800C2AEDE /* StartView.swift */,
 				CA6AD8042C09C5E2007E08E4 /* YonderApp.swift */,
-				CA6AD8062C09C5E2007E08E4 /* ContentView.swift */,
 				CA6AD8082C09C5E3007E08E4 /* Assets.xcassets */,
 				CA6AD80A2C09C5E3007E08E4 /* Preview Content */,
 			);
@@ -527,8 +530,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA4D528F2D3AB75F00C2AEDE /* StartView.swift in Sources */,
-				CA6AD8072C09C5E2007E08E4 /* ContentView.swift in Sources */,
+				CA4D52952D3ABF8F00C2AEDE /* MetricsView.swift in Sources */,
 				CA6AD8052C09C5E2007E08E4 /* YonderApp.swift in Sources */,
+				CA4D52932D3ABF2700C2AEDE /* SessionPagingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
