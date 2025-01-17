@@ -16,7 +16,16 @@ class WorkoutManager: NSObject, ObservableObject {
             startWorkout(workoutType: selectedWorkout)
         }
     }
-    
+
+    @Published var showingSummaryView: Bool = false {
+        didSet {
+            // Sheet dismissed
+            if showingSummaryView == false {
+                selectedWorkout = nil
+            }
+        }
+    }
+
     let healthStore = HKHealthStore()
     var session: HKWorkoutSession?
     var builder: HKLiveWorkoutBuilder?
@@ -36,6 +45,9 @@ class WorkoutManager: NSObject, ObservableObject {
             healthStore: healthStore,
             workoutConfiguration: configuration
         )
+
+        session?.delegate = self
+        
         // Start the workout session and begin data collection.
         let startDate = Date()
         session?.startActivity(with: startDate)
@@ -62,5 +74,48 @@ class WorkoutManager: NSObject, ObservableObject {
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
             // Handle error.
         }
+    }
+
+    // MARK: - State Control
+    // The workout session state.
+    @Published var running = false
+    func pause() {
+        session?.pause()
+    }
+    func resume() {
+        session?.resume()
+    }
+    func togglePause() {
+        if running == true {
+            pause()
+        } else {
+            resume()
+        }
+    }
+    func endWorkout() {
+        session?.end()
+        showingSummaryView = true
+    }
+}
+
+// MARK: - HKWorkoutSessionDelegate
+extension WorkoutManager: HKWorkoutSessionDelegate {
+    func workoutSession(_ workoutSession: HKWorkoutSession,
+                        didChangeTo toState: HKWorkoutSessionState,
+                        from fromState: HKWorkoutSessionState,
+                        date: Date) {
+        DispatchQueue.main.async {
+            self.running = toState == .running
+        }
+        // Wait for the session to transition states before ending the builder.
+        if toState == .ended {
+            builder?.endCollection(withEnd: date) { (success, error) in
+                self.builder?.finishWorkout { (workout, error) in
+                }
+            }
+        }
+    }
+    func workoutSession(_ workoutSession: HKWorkoutSession, didFailWithError error: Error) {
+
     }
 }
