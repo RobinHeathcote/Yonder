@@ -51,16 +51,17 @@ struct EditRouteView: View {
                 }
             }
             
-            NavigationLink(destination: RoutePreviewView.init(route: route)) {
-                Button(action: {}, label: {
-                    Label("Preview Route", systemImage: "arrow.right")
-                })
-    
+            if !route.pathData.isEmpty {
+                NavigationLink(destination: RoutePreviewView.init(route: route)) {
+                    Button(action: {}, label: {
+                        Label("Preview Route", systemImage: "arrow.right")
+                    })
+        
+                }
             }
-            .navigationTitle("Edit Route")
-            .navigationBarTitleDisplayMode(.inline)
         }
-
+        .navigationTitle("Edit Route")
+        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func read(from url: URL) -> Result<String, Error> {
@@ -68,7 +69,7 @@ struct EditRouteView: View {
         route.pathData = gpx?.tracks[0].segments[0].points ?? []
         
         print(route.pathData)
-
+        
         return Result { try String(contentsOf: url) }
     }
 }

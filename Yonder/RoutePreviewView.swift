@@ -19,12 +19,7 @@ struct RoutePreviewView: View {
     }
     
     func drawPolyline() -> [CLLocationCoordinate2D] {
-        var coords: [CLLocationCoordinate2D] = []
-        for point in route.pathData {
-            coords.append(point.coordinate)
-        }
-        
-        return coords
+        return route.pathData.map(\.coordinate)
     }
 }
 

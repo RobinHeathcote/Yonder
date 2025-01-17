@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0BC4442C664E7E0052B8EA /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BC4432C664E7E0052B8EA /* ExampleView.swift */; };
 		CA6AD7DD2C09C5E1007E08E4 /* YonderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */; };
 		CA6AD7DF2C09C5E1007E08E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */; };
 		CA6AD7E12C09C5E2007E08E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6AD7E02C09C5E2007E08E4 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA0BC4432C664E7E0052B8EA /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		CA6AD7D92C09C5E1007E08E4 /* Yonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonderApp.swift; sourceTree = "<group>"; };
 		CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				CA6AD8382C09DE9F007E08E4 /* Route.swift */,
 				CA6AD7E02C09C5E2007E08E4 /* Assets.xcassets */,
 				CA6AD7E22C09C5E2007E08E4 /* Preview Content */,
+				CA0BC4432C664E7E0052B8EA /* ExampleView.swift */,
 			);
 			path = Yonder;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				CA6AD8392C09DE9F007E08E4 /* Route.swift in Sources */,
 				CA6AD7DF2C09C5E1007E08E4 /* ContentView.swift in Sources */,
 				CA6AD83B2C09E4FD007E08E4 /* EditRouteView.swift in Sources */,
+				CA0BC4442C664E7E0052B8EA /* ExampleView.swift in Sources */,
 				CA6AD7DD2C09C5E1007E08E4 /* YonderApp.swift in Sources */,
 				CAA47C852C0A73D0008DD037 /* GPXWaypointExtension.swift in Sources */,
 				CAA47C832C0A6A50008DD037 /* RoutePreviewView.swift in Sources */,
@@ -754,6 +758,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yonder/Preview Content\"";
+				DEVELOPMENT_TEAM = 26Q7R9JY3W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Yonder;
@@ -786,6 +791,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yonder/Preview Content\"";
+				DEVELOPMENT_TEAM = 26Q7R9JY3W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Yonder;
