@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA0BC4442C664E7E0052B8EA /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0BC4432C664E7E0052B8EA /* ExampleView.swift */; };
+		CA4D528F2D3AB75F00C2AEDE /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D528E2D3AB75800C2AEDE /* StartView.swift */; };
 		CA6AD7DD2C09C5E1007E08E4 /* YonderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */; };
 		CA6AD7DF2C09C5E1007E08E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */; };
 		CA6AD7E12C09C5E2007E08E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6AD7E02C09C5E2007E08E4 /* Assets.xcassets */; };
@@ -85,6 +86,7 @@
 
 /* Begin PBXFileReference section */
 		CA0BC4432C664E7E0052B8EA /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		CA4D528E2D3AB75800C2AEDE /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		CA6AD7D92C09C5E1007E08E4 /* Yonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6AD7DC2C09C5E1007E08E4 /* YonderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonderApp.swift; sourceTree = "<group>"; };
 		CA6AD7DE2C09C5E1007E08E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		CA6AD8032C09C5E2007E08E4 /* Yonder Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				CA4D528E2D3AB75800C2AEDE /* StartView.swift */,
 				CA6AD8042C09C5E2007E08E4 /* YonderApp.swift */,
 				CA6AD8062C09C5E2007E08E4 /* ContentView.swift */,
 				CA6AD8082C09C5E3007E08E4 /* Assets.xcassets */,
@@ -523,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4D528F2D3AB75F00C2AEDE /* StartView.swift in Sources */,
 				CA6AD8072C09C5E2007E08E4 /* ContentView.swift in Sources */,
 				CA6AD8052C09C5E2007E08E4 /* YonderApp.swift in Sources */,
 			);
