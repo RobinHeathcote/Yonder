@@ -259,19 +259,19 @@
 			children = (
 				CA4D52A32D3AE43700C2AEDE /* Yonder Watch App.entitlements */,
 				CA4D52A22D3AE42C00C2AEDE /* Yonder-Watch-App-Info.plist */,
+				CA6AD8042C09C5E2007E08E4 /* YonderApp.swift */,
+				CA4D528E2D3AB75800C2AEDE /* StartView.swift */,
 				CA4D529E2D3AE12B00C2AEDE /* WorkoutManager.swift */,
+				CAF3BC9F2EB3D044002C9558 /* WatchConnectivityManager.swift */,
 				CA4D529C2D3AE01400C2AEDE /* ActivityRingsView.swift */,
 				CA4D529A2D3ADF7C00C2AEDE /* SummaryView.swift */,
 				CA4D52982D3AC27B00C2AEDE /* ControlsView.swift */,
 				CA4D52962D3AC00E00C2AEDE /* ElapsedTimeView.swift */,
 				CA4D52942D3ABF8F00C2AEDE /* MetricsView.swift */,
+				CAF3BCA12EB3D0B5002C9558 /* RouteMapView.swift */,
 				CA4D52922D3ABF2700C2AEDE /* SessionPagingView.swift */,
-				CA4D528E2D3AB75800C2AEDE /* StartView.swift */,
-				CA6AD8042C09C5E2007E08E4 /* YonderApp.swift */,
 				CA6AD8082C09C5E3007E08E4 /* Assets.xcassets */,
 				CA6AD80A2C09C5E3007E08E4 /* Preview Content */,
-				CAF3BC9F2EB3D044002C9558 /* WatchConnectivityManager.swift */,
-				CAF3BCA12EB3D0B5002C9558 /* RouteMapView.swift */,
 			);
 			path = "Yonder Watch App";
 			sourceTree = "<group>";

@@ -95,6 +95,12 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
 
+    func requestAlwaysAuthorization() {
+        let locationManager = CLLocationManager()
+
+        locationManager.requestAlwaysAuthorization()
+    }
+
     func pause() {
         session?.pause()
     }
