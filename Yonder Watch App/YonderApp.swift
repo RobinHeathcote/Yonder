@@ -8,7 +8,10 @@
 import SwiftUI
 
 @main
-struct Yonder_Watch_AppApp: App {
+struct Yonder_Watch_App: App {
+    init() {
+        _ = WatchConnectivityManager.shared
+    }
     @StateObject var workoutManager = WorkoutManager()
     var body: some Scene {
         WindowGroup {

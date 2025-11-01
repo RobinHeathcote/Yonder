@@ -15,7 +15,8 @@ struct EditRouteView: View {
     @State private var filePickerText = ""
     @State private var filePickerError: Error?
     @State private var isImporting = false
-    
+    @StateObject private var phoneConnectivityManager = PhoneConnectivityManager.shared
+
     var body: some View {
         Form {
             TextField("Route", text: $route.name)
@@ -50,7 +51,7 @@ struct EditRouteView: View {
                     self.filePickerError = error
                 }
             }
-            
+
             if !route.pathData.isEmpty {
                 NavigationLink(destination: RoutePreviewView.init(route: route)) {
                     Button(action: {}, label: {
@@ -58,6 +59,9 @@ struct EditRouteView: View {
                     })
         
                 }
+                Button(action:{ phoneConnectivityManager.sendRoute(coordinates: route.pathData.map(\.coordinate))}, label: {
+                    Label("Sync to Watch", systemImage: "arrow.2.circlepath.circle")
+                })
             }
         }
         .navigationTitle("Edit Route")

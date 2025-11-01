@@ -10,6 +10,9 @@ import SwiftUI
 
 @main
 struct YonderApp: App {
+    init() {
+        _ = PhoneConnectivityManager.shared
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()

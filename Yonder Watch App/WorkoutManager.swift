@@ -8,6 +8,7 @@
 
 import Foundation
 import HealthKit
+import CoreLocation
 
 class WorkoutManager: NSObject, ObservableObject {
     var selectedWorkout: HKWorkoutActivityType? {
@@ -29,7 +30,21 @@ class WorkoutManager: NSObject, ObservableObject {
     let healthStore = HKHealthStore()
     var session: HKWorkoutSession?
     var builder: HKLiveWorkoutBuilder?
-    
+
+    // MARK: - Route Handling
+    @Published var routePoints: [CLLocationCoordinate2D] = []
+
+    // Load a preplanned route (e.g., transferred from iOS) into memory for display.
+    func loadRoute(coordinates: [CLLocationCoordinate2D]) {
+        DispatchQueue.main.async {
+            self.routePoints = coordinates
+        }
+    }
+
+    // MARK: - State Control
+    // The workout session state.
+    @Published var running = false
+
     func startWorkout(workoutType: HKWorkoutActivityType) {
         let configuration = HKWorkoutConfiguration()
         configuration.activityType = workoutType
@@ -56,6 +71,7 @@ class WorkoutManager: NSObject, ObservableObject {
         builder?.beginCollection(withStart: startDate) { (success, error) in
             // The workout has started.
         }
+       
     }
     
     // Request authorization to access HealthKit.
@@ -78,10 +94,6 @@ class WorkoutManager: NSObject, ObservableObject {
             // Handle error.
         }
     }
-
-    // MARK: - State Control
-    // The workout session state.
-    @Published var running = false
 
     func pause() {
         session?.pause()
@@ -141,6 +153,7 @@ class WorkoutManager: NSObject, ObservableObject {
         averageHeartRate = 0
         heartRate = 0
         distance = 0
+        routePoints = []
     }
 }
 

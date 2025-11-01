@@ -14,14 +14,18 @@ struct SessionPagingView: View {
     @EnvironmentObject var workoutManager: WorkoutManager
     @State private var selection: Tab = .metrics
     
+
     enum Tab {
-        case controls, metrics, nowPlaying
+        case controls, metrics, map, nowPlaying
     }
     
     var body: some View {
         TabView(selection: $selection) {
             ControlsView().tag(Tab.controls)
             MetricsView().tag(Tab.metrics)
+            RouteMapView()
+                .tag(Tab.map)
+                .environmentObject(workoutManager)
             NowPlayingView().tag(Tab.nowPlaying)
         }
         .navigationTitle(workoutManager.selectedWorkout?.name ?? "")

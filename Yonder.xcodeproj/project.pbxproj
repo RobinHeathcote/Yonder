@@ -36,6 +36,9 @@
 		CAA47C7D2C0A544D008DD037 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = CAA47C7C2C0A544D008DD037 /* CoreGPX */; };
 		CAA47C832C0A6A50008DD037 /* RoutePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA47C822C0A6A50008DD037 /* RoutePreviewView.swift */; };
 		CAA47C852C0A73D0008DD037 /* GPXWaypointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA47C842C0A73D0008DD037 /* GPXWaypointExtension.swift */; };
+		CAF3BCA02EB3D044002C9558 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BC9F2EB3D044002C9558 /* WatchConnectivityManager.swift */; };
+		CAF3BCA22EB3D0B5002C9558 /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BCA12EB3D0B5002C9558 /* RouteMapView.swift */; };
+		CAF3BCAC2EB625B7002C9558 /* PhoneConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BCAB2EB625B7002C9558 /* PhoneConnectivityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +131,9 @@
 		CA6AD83C2C0A074E007E08E4 /* RouteListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListingView.swift; sourceTree = "<group>"; };
 		CAA47C822C0A6A50008DD037 /* RoutePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePreviewView.swift; sourceTree = "<group>"; };
 		CAA47C842C0A73D0008DD037 /* GPXWaypointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXWaypointExtension.swift; sourceTree = "<group>"; };
+		CAF3BC9F2EB3D044002C9558 /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
+		CAF3BCA12EB3D0B5002C9558 /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapView.swift; sourceTree = "<group>"; };
+		CAF3BCAB2EB625B7002C9558 /* PhoneConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnectivityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +224,7 @@
 				CA6AD7E02C09C5E2007E08E4 /* Assets.xcassets */,
 				CA6AD7E22C09C5E2007E08E4 /* Preview Content */,
 				CA0BC4432C664E7E0052B8EA /* ExampleView.swift */,
+				CAF3BCAB2EB625B7002C9558 /* PhoneConnectivityManager.swift */,
 			);
 			path = Yonder;
 			sourceTree = "<group>";
@@ -263,6 +270,8 @@
 				CA6AD8042C09C5E2007E08E4 /* YonderApp.swift */,
 				CA6AD8082C09C5E3007E08E4 /* Assets.xcassets */,
 				CA6AD80A2C09C5E3007E08E4 /* Preview Content */,
+				CAF3BC9F2EB3D044002C9558 /* WatchConnectivityManager.swift */,
+				CAF3BCA12EB3D0B5002C9558 /* RouteMapView.swift */,
 			);
 			path = "Yonder Watch App";
 			sourceTree = "<group>";
@@ -523,6 +532,7 @@
 				CA6AD8392C09DE9F007E08E4 /* Route.swift in Sources */,
 				CA6AD7DF2C09C5E1007E08E4 /* ContentView.swift in Sources */,
 				CA6AD83B2C09E4FD007E08E4 /* EditRouteView.swift in Sources */,
+				CAF3BCAC2EB625B7002C9558 /* PhoneConnectivityManager.swift in Sources */,
 				CA0BC4442C664E7E0052B8EA /* ExampleView.swift in Sources */,
 				CA6AD7DD2C09C5E1007E08E4 /* YonderApp.swift in Sources */,
 				CAA47C852C0A73D0008DD037 /* GPXWaypointExtension.swift in Sources */,
@@ -556,7 +566,9 @@
 				CA4D529B2D3ADF7C00C2AEDE /* SummaryView.swift in Sources */,
 				CA4D529F2D3AE12B00C2AEDE /* WorkoutManager.swift in Sources */,
 				CA4D52952D3ABF8F00C2AEDE /* MetricsView.swift in Sources */,
+				CAF3BCA02EB3D044002C9558 /* WatchConnectivityManager.swift in Sources */,
 				CA4D52972D3AC00E00C2AEDE /* ElapsedTimeView.swift in Sources */,
+				CAF3BCA22EB3D0B5002C9558 /* RouteMapView.swift in Sources */,
 				CA6AD8052C09C5E2007E08E4 /* YonderApp.swift in Sources */,
 				CA4D529D2D3AE01400C2AEDE /* ActivityRingsView.swift in Sources */,
 				CA4D52992D3AC27B00C2AEDE /* ControlsView.swift in Sources */,
